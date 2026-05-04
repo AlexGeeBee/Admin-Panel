@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клубы</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+
+    <div class="d-flex">
+        <nav class="sidebar d-flex flex-column flex-shrink-0 p-3">
+          <ul class="nav nav-pills flex-column mt-auto mb-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-center" aria-current="page"><img src="img/nav_home.svg" alt="Главная" width="50px"
+                /></a>
+            </li>
+            <li class="nav-item"><a href="clubs.html" class="nav-link active text-center"><img src="img/nav_clubs.svg" alt="Клубы" width="50px"
+                /></a></li>
+            <li class="nav-item"><a href="users.html" class="nav-link text-center"><img src="img/nav_users.svg" alt="Пользователи" width="48px"
+                /></a></li>
+          </ul>
+
+            <div class="text-center">
+                <!-- <span class="toggle btn">Смена темы</span> -->
+                 <img class="toggle btn p-0" src="img/theme switch.svg" width="50px" alt="Смена темы">
+            </div>
+        </nav>
+      
+        <main class="p-5 w-100">
+            <div class="fs-1 m-3 fw-medium">Клубы</div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">№</th>
+                    <th scope="col">Название</th>
+                    <th scope="col">Адрес</th>
+                    <th scope="col">Кол-во ПК</th>
+                    <th scope="col">Изменить</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Василеостровская</td>
+                    <td>13-я линия ВО, 30</td>
+                    <td>46</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Электросила</td>
+                    <td>ул. Благодатная, 40</td>
+                    <td>38</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Беговая</td>
+                    <td>ул. Савушкина, 141</td>
+                    <td>30</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Петроградская</td>
+                    <td>ул. Ординарная, 20</td>
+                    <td>44</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Площадь Ленина</td>
+                    <td>ул. Комсомола, 17</td>
+                    <td>40</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Бухарестская</td>
+                    <td>ул. Салова, 61</td>
+                    <td>48</td>
+                    <td><a href=""><img src="img/edit.svg" width="30px" alt="изменить"></a></td>
+                  </tr>
+
+                </tbody>
+
+            </table>
+        </main>
+    </div>
+      
+      
+
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script defer src="js/theme.js"></script>
+  </body>
+</html>
