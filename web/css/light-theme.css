@@ -2,6 +2,9 @@ body {
     background-color: rgb(230, 239, 240);
     color: black;
 }
+.stat_card {
+    background-color: white;
+}
 nav {
     background-color: rgb(182, 200, 203);
 }

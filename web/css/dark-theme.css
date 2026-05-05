@@ -1,7 +1,18 @@
 body {
-    background-color:rgb(60, 19, 99);
-    color:  rgb(208, 162, 250);
+    background-color:rgb(27, 29, 35);
+    color: white;
+}
+.stat_card {
+    background-color: rgb(158, 193, 218);
 }
 nav {
-    background-color: blueviolet;
+    background-color: rgb(18, 18, 18);
+}
+input, label {
+    color: black;
+}
+.table_css th, .table_css td {
+    background-color: rgb(27, 29, 35);
+    color: white;
+    border: 0;
 }
