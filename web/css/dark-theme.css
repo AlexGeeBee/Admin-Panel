@@ -2,6 +2,12 @@ body {
     background-color:rgb(27, 29, 35);
     color: white;
 }
+.nav-link:not(.nav-link_active) {
+    color: white;
+}
+.main_bg {
+    background-color:rgb(27, 29, 35);
+}
 .stat_card {
     background-color: rgb(158, 193, 218);
 }
@@ -15,4 +21,7 @@ input, label {
     background-color: rgb(27, 29, 35);
     color: white;
     border: 0;
+}
+.img_change_color {
+    filter: invert(1);
 }

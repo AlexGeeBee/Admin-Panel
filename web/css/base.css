@@ -8,7 +8,7 @@
 * {
     font-family: 'Montserrat', sans-serif !important;
 }
-.stat_num {
+.text-purple {
     color: #6f00f8;
 }
 
@@ -21,4 +21,35 @@ body, html {
     height: 100vh;
     position: sticky;  
     top: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+.sidebar {
+    width: 140px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.nav-link_active {
+    color: #2600FF;
+}
+
+@media (max-width: 720px) {
+    .desktop-nav {
+        display: none !important;
+    }
+}
+
+@media (min-width: 721px) {
+    .mobile-nav {
+        display: none !important;
+    }
+}
+
+.offcanvas {
+    width: 280px !important;
 }

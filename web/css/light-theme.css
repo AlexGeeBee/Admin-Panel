@@ -2,9 +2,18 @@ body {
     background-color: rgb(230, 239, 240);
     color: black;
 }
+.nav-link:not(.nav-link_active) {
+    color: black;
+}
+.main_bg {
+    background-color: rgb(230, 239, 240);
+}
 .stat_card {
     background-color: white;
 }
 nav {
     background-color: rgb(182, 200, 203);
+}
+.img_change_color {
+    filter: invert(0);
 }

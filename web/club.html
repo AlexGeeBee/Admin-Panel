@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Клуб Василеостровская</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/base.css" />
+  </head>
+  <body>
+
+    <div class="d-flex">
+        <nav class="sidebar d-flex flex-column flex-shrink-0 p-3">
+          <ul class="nav nav-pills flex-column mt-auto mb-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-center" aria-current="page"><img class="img_change_color" src="img/nav_home.svg" alt="Главная" width="50px"
+                /></a>
+            </li>
+            <li class="nav-item"><a href="clubs.html" class="nav-link text-center"><img class="img_change_color" src="img/nav_clubs.svg" alt="Клубы" width="50px"
+                /></a></li>
+            <li class="nav-item"><a href="users.html" class="nav-link text-center"><img class="img_change_color" src="img/nav_users.svg" alt="Пользователи" width="48px"
+                /></a></li>
+          </ul>
+
+            <div class="text-center">
+                <!-- <span class="toggle btn">Смена темы</span> -->
+                 <img class="img_change_color toggle btn p-0" src="img/theme switch.svg" width="50px" alt="Смена темы">
+            </div>
+        </nav>
+      
+        <main class="p-5 mx-3 w-100">
+            <div class="d-flex justify-content-end align-items-center gap-4">
+              <div class="d-flex justify-content-end align-items-center gap-1">
+                <p class="fs-5 fw-medium m-0">Админ</p>
+                <img class="img_change_color" src="img/profile-icon.svg" width="60px" alt="Профиль">
+              </div>
+              <button class="btn btn-light fw-medium fs-6">Выйти</button>
+            </div>
+            <div class="fs-1 my-5 fw-medium"><h1>Клуб Василеостровская</h1></div>
+
+            <div class="d-flex flex-column fw-medium">
+                <p class="fs-4 mb-0">Телефон</p>
+                <div class="d-flex flex-row align-items-center gap-2">
+                    <p class="text-purple m-0 fs-5">+7954264675</p>
+                    <button class="btn btn-outline-primary border-0 py-0 px-1"><img src="/img/edit.svg" alt="Изменить" width="35px"></button>
+                </div>
+            </div>
+            
+            <div class="fs-1 my-5 fw-medium"><h2>Зоны</h2></div>
+
+            <div class="bg-white px-5 py-4">
+                <h3>Standart</h3>
+
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <h4 class="text-center">Характеристики</h4>
+
+                        <div class="d-flex gap-5 fs-5 my-4">
+                            <div>
+                                <p>Мониторы</p>
+                                <p>Процессор</p>
+                                <p>Видеокарта</p>
+                                <p>Оперативная память</p>
+                            </div>
+        
+                            <div>
+                                <p class="text-purple">24 - 27’ 144 - 180 Hz</p>
+                                <p class="text-purple">AMD Ryzen 5 3600/1600</p>
+                                <p class="text-purple">2070 Super / 1660 Super</p>
+                                <p class="text-purple">16GB 3000 MHz</p>
+                            </div>
+
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-outline-info text-dark fw-medium fs-5 border-3">Изменить</button>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex flex-column">
+                        <h4 class="text-center">Цены</h4>
+
+                        <div class="d-flex gap-5 fs-5 my-4">
+                            <div>
+                                <p>1 час</p>
+                                <p>3 часа</p>
+                                <p>5 часов</p>
+                            </div>
+        
+                            <div>
+                                <p class="text-purple">120 руб.</p>
+                                <p class="text-purple">300 руб.</p>
+                                <p class="text-purple">490 руб.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-auto">
+                            <button class="btn btn-outline-info text-dark fw-medium fs-5 border-3">Изменить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="d-grid mt-4">
+                <button type="button" class="btn btn-outline-info border-2 text-dark fs-5 fw-medium">Добавить</button>
+            </div>
+        </main>
+    </div>
+      
+      
+
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script defer src="js/theme.js"></script>
+  </body>
+</html>
