@@ -2,6 +2,7 @@ body {
     background-color:rgb(27, 29, 35);
     color: white;
 }
+
 .nav-link:not(.nav-link_active) {
     color: white;
 }
@@ -14,14 +15,33 @@ body {
 nav {
     background-color: rgb(18, 18, 18);
 }
-input, label {
+.auth input, .auth label {
     color: black;
 }
-.table_css th, .table_css td {
-    background-color: rgb(27, 29, 35);
+
+.table_css a {
     color: white;
-    border: 0;
+}
+.table_css th, .table_css td {
+    color: white;
 }
 .img_change_color {
     filter: invert(1);
+}
+.table_header th {
+    background-color: #39415B;
+}
+.table_body th, .table_body td {
+    background-color: #494977;
+    border-bottom: 2px solid #B6C8CB;
+}
+.table_body tr:last-child td,
+.table_body tr:last-child th {
+    border-bottom: none;
+}
+.btn-outline-info {
+    color: #ffffff;
+}
+.zone {
+    background-color: #252525;
 }

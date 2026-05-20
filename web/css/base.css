@@ -37,19 +37,41 @@ body, html {
 .nav-link_active {
     color: #2600FF;
 }
+.table_header th {
+    border: none;
+}
+
+
+
 
 @media (max-width: 720px) {
+
     .desktop-nav {
         display: none !important;
     }
+
+    .dashboard_block {
+    max-width: 100%;
+
+}
 }
 
 @media (min-width: 721px) {
+
     .mobile-nav {
         display: none !important;
     }
+    
 }
 
 .offcanvas {
     width: 280px !important;
+}
+
+@media (max-width: 375px) {
+
+    .offcanvas {
+        width: 230px !important;
+    }
+
 }

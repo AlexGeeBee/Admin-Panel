@@ -2,6 +2,9 @@ body {
     background-color: rgb(230, 239, 240);
     color: black;
 }
+a {
+    color: black;
+}
 .nav-link:not(.nav-link_active) {
     color: black;
 }
@@ -16,4 +19,21 @@ nav {
 }
 .img_change_color {
     filter: invert(0);
+}
+
+.table_css th, .table_css td, .table_css a {
+    color: black;
+}
+.table_body th, .table_body td {
+    background-color:  white;
+    border-bottom: 1px solid lightgray;
+}
+.table_header th {
+    background-color: #B6C8CB;
+}
+.btn-outline-info {
+    color: #000;
+}
+.zone {
+    background-color: white;
 }

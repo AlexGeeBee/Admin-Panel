@@ -9,25 +9,67 @@
   </head>
   <body>
 
-    <div class="d-flex">
-        <nav class="sidebar d-flex flex-column flex-shrink-0 p-3">
-          <ul class="nav nav-pills flex-column mt-auto mb-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link text-center" aria-current="page"><img class="img_change_color" src="img/nav_home.svg" alt="Главная" width="50px"
-                /></a>
-            </li>
-            <li class="nav-item"><a href="clubs.html" class="nav-link text-center"><img class="img_change_color" src="img/nav_clubs.svg" alt="Клубы" width="50px"
-                /></a></li>
-            <li class="nav-item"><a href="users.html" class="nav-link active text-center"><img class="img_change_color" src="img/nav_users.svg" alt="Пользователи" width="48px"
-                /></a></li>
-          </ul>
+    <div class="d-flex flex-md-row flex-column">
 
-            <div class="text-center">
-                <!-- <span class="toggle btn">Смена темы</span> -->
-                 <img class="img_change_color toggle btn p-0" src="img/theme switch.svg" width="50px" alt="Смена темы">
-            </div>
-        </nav>
+      <nav class="sidebar d-flex flex-column flex-shrink-0 p-3 desktop-nav">
+        <ul class="nav nav-pills flex-column mt-auto mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link text-center" aria-current="page">
+                    <img class="img_change_color" src="img/nav_home.svg" alt="Главная" width="50px">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="clubs.html" class="nav-link text-center">
+                    <img class="img_change_color" src="img/nav_clubs.svg" alt="Клубы" width="50px">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="users.html" class="nav-link active text-center">
+                    <img class="img_change_color" src="img/nav_users.svg" alt="Пользователи" width="48px">
+                </a>
+            </li>
+        </ul>
+        <div class="text-center">
+            <img class="img_change_color toggle btn p-0" src="img/theme switch.svg" width="50px" alt="Смена темы">
+        </div>
+    </nav>
       
+
+    <nav class="mobile-nav w-100 p-3">
+      <div>
+          <div class="d-flex justify-content-between align-items-center">
+              <button class="btn btn-outline-dark border-0 img_change_color" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+              </button>
+              
+              <img class="img_change_color toggle btn p-0" src="img/theme switch.svg" width="40px" alt="Смена темы">
+          </div>
+      </div>
+  
+      <div class="offcanvas offcanvas-start main_bg p-3" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+          <div class="offcanvas-header">
+              <button type="button" class="btn-close fs-2 img_change_color" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+          </div>
+          <div class="offcanvas-body p-1">
+              <ul class="nav nav-pills flex-column fs-4 fw-semibold">
+                  <li class="nav-item">
+                      <a href="index.html" class="nav-link">Главная</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="clubs.html" class="nav-link">Клубы</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="users.html" class="nav-link nav-link_active">Пользователи</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      </nav>
+      
+
+
         <main class="p-5 w-100">
           <div class="d-flex justify-content-end align-items-center gap-4">
               <div class="d-flex justify-content-end align-items-center gap-1">
@@ -56,7 +98,7 @@
             
                 <div class="col-md-2">
                   <button class="btn btn-outline-primary border-0" aria-label="Искать">
-                    <img src="/img/search-icon.svg" alt="Искать" width="25px">
+                    <img class="img_change_color" src="/img/search-icon.svg" alt="Искать" width="25px">
                   </button>
                 </div>
             
@@ -64,96 +106,96 @@
             </form>
             
 
-            <table class="table table-bordered fs-6 fw-medium">
+            <table class="table_css table fs-6 fw-medium">
                 <thead>
-                  <tr class="table-info">
-                    <th class="p-2" scope="col">ID</th>
-                    <th class="p-2" scope="col">Имя</th>
-                    <th class="p-2" scope="col">Телефон</th>
-                    <th class="p-2" scope="col">Часов наиграно</th>
-                    <th class="p-2" scope="col">Статус</th>
-                    <th class="p-2" scope="col">Дата регистрации</th>
-                    <th class="p-2" scope="col">Последняя активность</th>
-                    <th class="p-2" scope="col">Действия</th>
+                  <tr class="table_header">
+                    <th class="px-3 py-2" scope="col">ID</th>
+                    <th class="px-3 py-2" scope="col">Имя</th>
+                    <th class="px-3 py-2" scope="col">Телефон</th>
+                    <th class="px-3 py-2" scope="col">Часов наиграно</th>
+                    <th class="px-3 py-2" scope="col">Статус</th>
+                    <th class="px-3 py-2" scope="col">Дата регистрации</th>
+                    <th class="px-3 py-2" scope="col">Последняя активность</th>
+                    <th class="px-3 py-2" scope="col">Действия</th>
                   </tr>
                 </thead>
 
-                <tbody>
+                <tbody class="table_body">
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">1</th>
-                    <td class="p-2 align-middle">Алексей</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">6</td>
-                    <td class="p-2 align-middle">Активен</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">Сегодня</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">1</th>
+                    <td class="px-3 py-2 align-middle">Алексей</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">6</td>
+                    <td class="px-3 py-2 align-middle">Активен</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">Сегодня</td>
+                    <td class="px-3 py-2 align-middle">
                       <button class="btn border-0 btn-outline-primary"><img title="Заблокировать" src="img/block-icon.svg" width="40px" alt="Заблокировать"></button>
                     </td>
                   </tr>
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">2</th>
-                    <td class="p-2 align-middle">Владимир</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">38</td>
-                    <td class="p-2 align-middle">Активен</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">10 дней назад</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">2</th>
+                    <td class="px-3 py-2 align-middle">Владимир</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">38</td>
+                    <td class="px-3 py-2 align-middle">Активен</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">10 дней назад</td>
+                    <td class="px-3 py-2 align-middle">
                       <button class="btn border-0 btn-outline-primary"><img title="Заблокировать" src="img/block-icon.svg" width="40px" alt="Заблокировать"></button>
                     </td>
                   </tr>
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">3</th>
-                    <td class="p-2 align-middle">Юлия</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">30</td>
-                    <td class="p-2 align-middle">Активен</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">1 месяц назад</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">3</th>
+                    <td class="px-3 py-2 align-middle">Юлия</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">30</td>
+                    <td class="px-3 py-2 align-middle">Активен</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">1 месяц назад</td>
+                    <td class="px-3 py-2 align-middle">
                       <button class="btn border-0 btn-outline-primary"><img title="Заблокировать" src="img/block-icon.svg" width="40px" alt="Заблокировать"></button>
                     </td>
                   </tr>
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">4</th>
-                    <td class="p-2 align-middle">Михаил</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">178</td>
-                    <td class="p-2 align-middle">Активен</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">2 дня назад</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">4</th>
+                    <td class="px-3 py-2 align-middle">Михаил</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">178</td>
+                    <td class="px-3 py-2 align-middle">Активен</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">2 дня назад</td>
+                    <td class="px-3 py-2 align-middle">
                       <button class="btn border-0 btn-outline-primary"><img title="Заблокировать" src="img/block-icon.svg" width="40px" alt="Заблокировать"></button>
                     </td>
                   </tr>
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">5</th>
-                    <td class="p-2 align-middle">Станислав</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">60</td>
-                    <td class="p-2 align-middle">Активен</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">Сегодня</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">5</th>
+                    <td class="px-3 py-2 align-middle">Станислав</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">60</td>
+                    <td class="px-3 py-2 align-middle">Активен</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">Сегодня</td>
+                    <td class="px-3 py-2 align-middle">
                       <button class="btn border-0 btn-outline-primary"><img title="Заблокировать" src="img/block-icon.svg" width="40px" alt="Заблокировать"></button>
                     </td>
                   </tr>
 
                   <tr>
-                    <th class="p-2 align-middle"  scope="row">6</th>
-                    <td class="p-2 align-middle">Илья</td>
-                    <td class="p-2 align-middle">+79542785832</td>
-                    <td class="p-2 align-middle">35</td>
-                    <td class="p-2 align-middle text-danger">Заблокирован</td>
-                    <td class="p-2 align-middle">29.04.2026</td>
-                    <td class="p-2 align-middle">5 дней назад</td>
-                    <td class="p-2 align-middle">
+                    <th class="px-3 py-2 align-middle"  scope="row">6</th>
+                    <td class="px-3 py-2 align-middle">Илья</td>
+                    <td class="px-3 py-2 align-middle">+79542785832</td>
+                    <td class="px-3 py-2 align-middle">35</td>
+                    <td class="px-3 py-2 align-middle text-danger fw-semibold">Заблокирован</td>
+                    <td class="px-3 py-2 align-middle">29.04.2026</td>
+                    <td class="px-3 py-2 align-middle">5 дней назад</td>
+                    <td class="px-3 py-2 align-middle">
                         <button class="btn border-0 btn-outline-primary"><img title="Разблокировать" src="img/unblock-icon.svg" width="40px" alt="Разблокировать"></button>
                         <button class="btn border-0 btn-outline-primary"><img title="Удалить" class="mt-1" src="img/delete-icon.svg" width="45px" alt="Удалить"></button>
                     </td>
@@ -169,7 +211,7 @@
     </div>
       
       
-
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-4.0.0.min.js"></script>
     <script defer src="js/theme.js"></script>
   </body>
