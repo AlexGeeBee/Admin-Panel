@@ -15,6 +15,10 @@ body {
 nav {
     background-color: rgb(18, 18, 18);
 }
+.club_cards>div {
+    background-color: #494977;
+    color: white;
+}
 .auth input, .auth label {
     color: black;
 }

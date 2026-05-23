@@ -17,6 +17,10 @@ a {
 nav {
     background-color: rgb(182, 200, 203);
 }
+.club_cards>div {
+    background-color: white;
+    color: black;
+}
 .img_change_color {
     filter: invert(0);
 }
