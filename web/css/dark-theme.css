@@ -3,7 +3,7 @@ body {
     color: white;
 }
 
-.nav-link:not(.nav-link_active) {
+.card-title a,.nav-link:not(.nav-link_active) {
     color: white;
 }
 .main_bg {

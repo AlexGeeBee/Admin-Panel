@@ -14,23 +14,12 @@
 
 body, html {
     height: 100%;
-  }
+}
   
 .sidebar {
     width: 140px;
     height: 100vh;
     position: sticky;  
-    top: 0;
-}
-
-body, html {
-    height: 100%;
-}
-
-.sidebar {
-    width: 140px;
-    height: 100vh;
-    position: sticky;
     top: 0;
 }
 
@@ -52,9 +41,14 @@ body, html {
 
     .dashboard_block {
     max-width: 100%;
+    }
+
+    .stat_card {
+        min-height: 150px;
+    }
 
 }
-}
+
 
 @media (min-width: 761px) {
 
@@ -72,6 +66,9 @@ body, html {
 
     .offcanvas {
         width: 230px !important;
+    }
+    .stat_card {
+        min-height: 120px;
     }
 
 }

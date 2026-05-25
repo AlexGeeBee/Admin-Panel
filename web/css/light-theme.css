@@ -2,7 +2,7 @@ body {
     background-color: rgb(230, 239, 240);
     color: black;
 }
-a {
+a, .card-title a {
     color: black;
 }
 .nav-link:not(.nav-link_active) {
