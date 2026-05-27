@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(230, 239, 240);
+    color: black;
+}
+a, .card-title a {
+    color: black;
+}
+.nav-link:not(.nav-link_active) {
+    color: black;
+}
+.main_bg {
+    background-color: rgb(230, 239, 240);
+}
+.stat_card {
+    background-color: white;
+}
+nav {
+    background-color: rgb(182, 200, 203);
+}
+.club_cards>div {
+    background-color: white;
+    color: black;
+}
+.img_change_color {
+    filter: invert(0);
+}
+
+.table_css th, .table_css td, .table_css a {
+    color: black;
+}
+.table_body th, .table_body td {
+    background-color:  white;
+    border-bottom: 1px solid lightgray;
+}
+.table_header th {
+    background-color: #B6C8CB;
+}
+.btn-outline-info {
+    color: #000;
+}
+.zone {
+    background-color: white;
+}
